@@ -1,0 +1,196 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  background-color: #000;
+  color: #0ff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  color: black;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #9D00FF;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3.5em;
+  color: #f0f;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #0ff;
+  text-align: center;
+}
+
+form {
+  text-align: left;
+  margin: 0 auto; 
+  max-width: 400px;
+  margin-bottom: 500px;
+}
+
+label {
+  display: block;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="number"]::placeholder,
+textarea::placeholder {
+    color: #0f0; /* Neon green placeholder text */
+    background-color: black;
+    border: 2px solid #0f0; 
+    padding: 5px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 50px;
+  border: 1px solid #0f0;
+  border-radius: 5px;
+  background-color: #333;
+  color: #0f0;
+}
+
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M 0 5 L 20 5 L 10 15 Z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  color: #0f0;
+  background-color: black;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00ff00;
+  color: #000;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00cc00;
+}
+
+/* Increase text size for the survey form */
+#survey-form {
+  font-size: 1.75rem; 
+  background-color: black;
+}
+
+/* Increase text size for form labels */
+.form-group label {
+  font-size: 1.625rem; 
+}
+
+/* Increase text size for form input fields */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  font-size: 1.625rem; 
+}
+
+header h1 {
+  font-size: 4.5rem; 
+}
+
+header p {
+  font-size: 2.5rem; 
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Animation */
+@keyframes buttonAnimation {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+#submit {
+  animation: buttonAnimation 1s ease infinite;
+  background-color: rgb(255, 0, 0); /* Initial color */
+}
+
+/* Additional animation */
+@keyframes colorChange {
+  0% { background-color: rgb(255, 0, 0); }
+  50% { background-color: rgb(0, 255, 0); }
+  100% { background-color: rgb(0, 0, 255); }
+}
+
+#submit:hover {
+  animation: colorChange 1s infinite alternate; /* Alternate between initial and final color */
+}
+
+  /* Form Styling */
+    form {
+      background-color: rgba(255, 255, 255, 0.8); 
+      padding: 20px;
+      border-radius: 10px;
+      width: 80%; /* Adjust width as needed */
+      max-width: 500px; /* Limit maximum width */
+    }
+
+/* Regular styles for larger screens */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #000;
+}
+
+footer img {
+  width: 800px; /* Adjust width as needed for larger screens */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  footer img {
+    width: 80%; /* Adjust width to fit smaller screens */
+  }
+}
+
+#dropdown {
+  margin-bottom: 100px;
+}
+
+#PC-Gaming-Choices {
+  margin-top: 100px;
+}
+
+#select-choice {
+  color: red;
+}

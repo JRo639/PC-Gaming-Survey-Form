@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width">
+
+ <!-- Title of Project2 -->
+  <title>PC Gaming Survey</title>
+
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+
+ <!-- Roboto font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+ <!-- Free Code Camp Test -->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  <header>
+
+    <h1 id="title">PC Gaming Survey</h1>
+
+    <h2 id="instructions">&#x2193; Scroll Downwards &#x2193;</h2>
+
+    <p id="description">We'd love to hear your thoughts on PC gaming! Please fill out the survey below.</p>
+
+  </header>
+
+  <main>
+
+    <form id="survey-form">
+
+      <div class="form-group">
+<!-- Gamer's Name -->
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+
+  
+      <div class="form-group">
+      <!-- Email -->
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+  
+      <div class="form-group">
+     <!-- Age -->
+        <label for="number" id="number-label">Age:</label>
+        <input type="number" id="number" name="number" placeholder="Enter #" min="0" max="100" required>
+      </div>
+
+      <div class="form-group">
+     <!-- Favorite PC Game -->
+        <label for="favorite-game" id="favorite-game-label">Favorite PC Game:</label>
+        <input type="text" id="favorite-game" name="favorite-game" placeholder="Enter your fav PC game">
+      </div>
+
+  <!-- Preferred PC Gaming Platform Drop Down Menu -->
+      <div class="form-group">
+        <label for="dropdown" id="platform-label">Preferred PC Gaming Platform:</label>
+
+  <!-- PC Gaming Platform Choices -->
+        <select id="dropdown" name="platform">
+          <option id="select-choice" value="Select">Select Option</option>
+          <option value="Steam">Steam</option>
+          <option value="Epic Games Store">Epic Games Store</option>
+          <option value="GOG">GOG</option>
+          <option value="Origin">Origin</option>
+        </select>
+      </div>
+
+    
+      <div class="form-group">
+        <!-- Favorite PC Gaming Genre -->
+        <label>Favorite PC Gaming Genre:</label>
+        <br>
+        <input type="radio" id="action" name="genre" value="Action">
+        <label for="action">Action</label>
+        <br>
+        <input type="radio" id="adventure" name="genre" value="Adventure">
+        <label for="adventure">Adventure</label>
+        <br>
+        <input type="radio" id="rpg" name="genre" value="RPG">
+        <label for="rpg">RPG</label>
+        <br>
+        <input type="radio" id="fps" name="genre" value="FPS">
+        <label for="fps">FPS</label>
+        <br>
+        <input type="radio" id="other" name="genre" value="Other">
+        <label for="other"> Other</label>
+        <br>
+      </div>
+
+      <div class="form-group">
+        <br>
+      <!-- Favorite PC Gaming Features -->
+        <label id="PC-Gaming-Choices">Favorite PC Gaming Features:</label>
+        <input type="checkbox" id="graphics" name="features" value="Graphics">
+        <label for="graphics">Graphics</label>
+        <br>
+        <input type="checkbox" id="storyline" name="features" value="Storyline">
+        <label for="storyline">Storyline</label>
+        <br>
+        <input type="checkbox" id="multiplayer" name="multiplayer" value="yes">
+        <label for="multiplayer">Multiplayer</label>
+        <br>
+      </div>
+
+      <div class="form-group">
+     <!-- Additional Comments -->
+        <label for="comments">Additional Comments:</label>
+        <br>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here"></textarea>
+      </div>
+
+    <!-- Submit Button -->
+      <button type="submit" id="submit">Submit</button>
+
+    </form>
+
+  </main>
+
+  <footer>
+<!-- Adding my artwork -->
+    <img src="Images/PC_Gamer_artwork.jpg" alt="PC Gamer typing on keyboard">
+  </footer>
+
+<!-- Audio content -->
+  <audio autoplay>
+    <source src="Audio/New_Years-Eve-2023_Remix.mp3" type="audio/mpeg">
+  </audio>
+
+</body>
+
+</html>
